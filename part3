@@ -1,0 +1,24 @@
+<?php
+$month = array("January","February","March","April","May","June","July","August","September","October","November","December");
+$length = count($month);
+echo "\nStandard loop not FOREACH:\n";
+for ($i = 0; $i < $length; $i++) {
+print $month[$i]." ";
+}
+sort($month);
+echo "\nMonths in order loop:\n";
+for ($i = 0; $i < $length; $i++) {
+print $month[$i]." ";
+}
+echo "\n\n";
+$month1 = array("January","February","March","April","May","June","July","August","September","October","November","December");
+echo "\nStandard loop not FOREACH:\n";
+foreach($month1 as $value) {
+print $value." ";
+}
+sort($month1);
+echo "\nMonths in order loop:\n";
+foreach($month1 as $value) {
+print $value." ";
+}
+?>
